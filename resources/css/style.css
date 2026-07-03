@@ -246,6 +246,23 @@ header {
 }
 
 
+/* Lifestyle interests */
+.interests {
+    max-width: 800px;
+    margin: 60px auto 80px;
+    padding: 0 20px;
+}
+
+.interest + .interest {
+    margin-top: 40px;
+}
+
+.interest p {
+    font-size: 90%;
+    line-height: 1.7;
+}
+
+
 /* Contact */
 .contact {
     max-width: 600px;
