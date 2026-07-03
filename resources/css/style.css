@@ -17,6 +17,17 @@ body {
     overflow-x: hidden;
 }
 
+/* Keep the footer pinned to the bottom on short pages */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 h1 {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
@@ -300,4 +311,39 @@ header {
     font-size: 85%;
     color: #888;
     text-align: center;
+}
+
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #e0e8f4;
+    padding: 30px 20px 40px;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 75%;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+    color: #3d6cb3;
+}
+
+.footer-copy {
+    font-size: 70%;
+    color: #888;
 }
