@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Nick Menendez's personal website: a static HTML/CSS site with no build process, package manager, or test suite. There is no `package.json` — files are meant to be opened/served directly as static assets.
 
+## Roadmap
+
+Planned additions to the site live in `TODO.md` at the repo root — check it when the user asks to work on the next site task, and keep it updated as items are completed or added.
+
 ## Development
 
 There is no build, lint, or test tooling in this repo. To preview changes, open `index.html` directly in a browser or serve the directory with any static file server (e.g. `python3 -m http.server`).
