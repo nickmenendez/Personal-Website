@@ -6,14 +6,20 @@
     box-sizing: border-box;
 }
 
-html
+html,
 body {
     background-color: #fff;
     color: #555;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 .clearfix {zoom:1}
@@ -28,7 +34,8 @@ body {
 
 /* Homepage Header */
 header {
-    background-image: linear-gradient(to bottom, #fdfdfd, #b7d0f1);
+    position: relative;
+    background-image: linear-gradient(to bottom, #fdfdfd, #8fb3e0);
     height: 100vh;
 }
 
@@ -43,6 +50,24 @@ header {
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
+}
+
+.main-content-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .subtitle {
