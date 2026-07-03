@@ -235,6 +235,59 @@ header {
 }
 
 
+/* Contact */
+.contact {
+    max-width: 600px;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+}
+
+.contact-intro {
+    font-size: 95%;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    list-style: none;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e0e8f4;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.contact-links li:last-child a {
+    border-bottom: none;
+}
+
+.contact-links a:hover .contact-value,
+.contact-links a:active .contact-value {
+    color: #3d6cb3;
+}
+
+.contact-label {
+    flex: 0 0 100px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #3d6cb3;
+}
+
+.contact-value {
+    font-size: 90%;
+    transition: color 0.2s;
+}
+
+
 /* Education */
 .education {
     max-width: 800px;
