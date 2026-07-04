@@ -322,6 +322,18 @@ nav.nav-open .nav-toggle .icon-close {
     margin: 2px 0 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .job {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .job-dates {
+        flex: 0 0 auto;
+        padding-top: 0;
+    }
+}
+
 
 /* Lifestyle interests */
 .interests {
