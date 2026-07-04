@@ -351,6 +351,114 @@ nav.nav-open .nav-toggle .icon-close {
     line-height: 1.7;
 }
 
+/* Lifestyle photo galleries */
+.gallery {
+    position: relative;
+    margin-top: 20px;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 140px,
+        #000 calc(100% - 140px),
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 140px,
+        #000 calc(100% - 140px),
+        transparent
+    );
+}
+
+.gallery-track::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-slide {
+    flex: 0 0 calc((100% - 24px) / 3);
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #e0e8f4;
+    scroll-snap-align: start;
+}
+
+.gallery-slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-slide:hover img {
+    transform: scale(1.04);
+}
+
+.gallery-nav {
+    display: none;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.gallery.is-ready .gallery-nav {
+    display: flex;
+}
+
+.gallery-arrow {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #e0e8f4;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #3d6cb3;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:active {
+    background-color: #3d6cb3;
+    border-color: #3d6cb3;
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-slide {
+        flex-basis: 100%;
+    }
+
+    .gallery-track {
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            #000 56px,
+            #000 calc(100% - 56px),
+            transparent
+        );
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            #000 56px,
+            #000 calc(100% - 56px),
+            transparent
+        );
+    }
+}
+
 
 /* Contact */
 .contact {
