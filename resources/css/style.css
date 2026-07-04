@@ -48,6 +48,8 @@ header {
     position: relative;
     background-image: linear-gradient(to bottom, #fdfdfd, #8fb3e0);
     height: 100vh;
+    /* Fit the visible viewport on phones with dynamic browser toolbars */
+    height: 100svh;
 }
 
 
@@ -158,6 +160,21 @@ nav.nav-open .nav-toggle .icon-close {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content-home {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .hero-photo {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .subtitle {
