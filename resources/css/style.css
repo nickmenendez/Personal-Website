@@ -433,7 +433,6 @@ nav.nav-open .nav-toggle .icon-close {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin-bottom: 15px;
 }
 
 .footer-nav a {
@@ -449,7 +448,12 @@ nav.nav-open .nav-toggle .icon-close {
     color: #3d6cb3;
 }
 
-.footer-copy {
-    font-size: 70%;
-    color: #888;
+.footer-nav a.footer-linkedin {
+    display: inline-flex;
+    color: #0a66c2;
+}
+
+.footer-nav a.footer-linkedin:hover,
+.footer-nav a.footer-linkedin:active {
+    color: #004182;
 }
