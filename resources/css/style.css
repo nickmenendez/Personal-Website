@@ -399,6 +399,12 @@ nav.nav-open .nav-toggle .icon-close {
     transition: transform 0.3s;
 }
 
+/* Portrait-oriented galleries (e.g. skiing) use a taller frame so vertical
+   phone shots aren't cropped to a thin landscape band. */
+.gallery-portrait .gallery-slide img {
+    aspect-ratio: 3 / 4;
+}
+
 .gallery-slide:hover img {
     transform: scale(1.04);
 }
