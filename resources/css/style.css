@@ -405,8 +405,42 @@ nav.nav-open .nav-toggle .icon-close {
     aspect-ratio: 3 / 4;
 }
 
+/* Keep the left edge in frame for wide group shots where the subject sits on
+   the far left and would otherwise be cropped out of the portrait frame. */
+.gallery-focus-left {
+    object-position: left center;
+}
+
 .gallery-slide:hover img {
     transform: scale(1.04);
+}
+
+/* Captioned galleries: the image sits in its own rounded frame (which clips
+   the hover zoom) and the location caption sits below it on the page. */
+.gallery-captioned .gallery-slide {
+    overflow: visible;
+    border-radius: 0;
+    background: none;
+}
+
+.gallery-frame {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #e0e8f4;
+}
+
+.gallery-caption {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #5a6b82;
+}
+
+.gallery-pin {
+    flex: 0 0 auto;
+    color: #3d6cb3;
 }
 
 .gallery-nav {
