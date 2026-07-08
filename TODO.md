@@ -16,9 +16,11 @@ Future additions to the site, roughly in priority order.
 
 ## 3. Photos for the lifestyle page
 
-- Add a photo row or grid to `lifestyle.html` — best candidates: backcountry skiing, a surf trip, the coffee roasting setup.
-- Compress images for the web (target < 300 KB each) and store in `resources/img/`.
-- Add descriptive `alt` text for each photo.
+Layout is in place: each section on `lifestyle.html` has an arrow-button photo gallery (`resources/js/gallery.js`) showing three photos at a time, currently filled with four generated placeholder images per section in `resources/img/lifestyle/`. Remaining:
+
+- Replace the placeholders with real photos, keeping the same filenames (`skiing-1.jpg` … `coffee-4.jpg`). Compress for the web, target < 300 KB each.
+- Tailor each photo's `alt` text in `lifestyle.html` to the actual image.
+- To add or remove photos, add or delete `.gallery-slide` figures in the section's `.gallery-track` — the gallery handles any count.
 
 ## Other ideas (not yet committed to)
 
