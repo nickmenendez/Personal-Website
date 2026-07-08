@@ -14,14 +14,6 @@ Future additions to the site, roughly in priority order.
 - Link it near the bottom of `professional-experience.html`, alongside a pointer to LinkedIn.
 - Keep the PDF in sync with the page content when roles change.
 
-## 3. Photos for the lifestyle page
-
-Layout is in place: each section on `lifestyle.html` has an arrow-button photo gallery (`resources/js/gallery.js`) showing three photos at a time, currently filled with four generated placeholder images per section in `resources/img/lifestyle/`. Remaining:
-
-- Replace the placeholders with real photos, keeping the same filenames (`skiing-1.jpg` … `coffee-4.jpg`). Compress for the web, target < 300 KB each.
-- Tailor each photo's `alt` text in `lifestyle.html` to the actual image.
-- To add or remove photos, add or delete `.gallery-slide` figures in the section's `.gallery-track` — the gallery handles any count.
-
 ## Other ideas (not yet committed to)
 
 - Deploy the site to nickmenendez.com (GitHub Pages is a natural fit for this repo); social preview tags activate once live.
